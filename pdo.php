@@ -7,7 +7,6 @@
 		function __construct(){
 			try{
 				$this->pdo=new PDO($this->dsn,$this->user,$this->password);
-
 				}catch(PDOException $e){
 					echo $e->getMessage();
 				}
